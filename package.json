@@ -1,0 +1,39 @@
+{
+    "name": "camarero",
+    "version": "0.0.1-alpha",
+    "description": "Download Server for your static binary files.",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/secanis/camarero.git"
+    },
+    "keywords": [
+        "download",
+        "portal",
+        "file",
+        "hosting",
+        "static",
+        "binary",
+        "files"
+    ],
+    "author": "matthias.baldi@secanis.ch",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/secanis/camarero/issues"
+    },
+    "homepage": "https://github.com/secanis/camarero#readme",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "http-auth": "^3.2.3",
+        "multer": "^1.4.1",
+        "serve-index": "^1.9.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.9"
+    }
+}
