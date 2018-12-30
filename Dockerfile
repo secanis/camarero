@@ -1,20 +1,13 @@
-FROM node:alpine
+FROM httpd:alpine
 
 LABEL maintainer=support@secanis.ch \
     ch.secanis.tool=camarero
 
-WORKDIR /app
-ENV NODE_ENV production
+COPY /apache/httpd.conf /usr/local/apache2/conf/httpd.conf
+COPY --chown=daemon:daemon /apaxy /var/www/
 
-COPY . /app
+RUN chown daemon:daemon -R /usr/local/apache2/logs
 
-RUN npm install --production \
-    && adduser -D myuser \
-    && chown myuser:myuser -R ./
-USER myuser
+USER daemon
 
-HEALTHCHECK --interval=15s --timeout=15s --start-period=5s --retries=3 CMD node /app/healthcheck.js
-
-EXPOSE 3000
-
-CMD ["node", "server.js"]
+CMD ["httpd-foreground"]

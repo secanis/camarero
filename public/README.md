@@ -1,1 +1,0 @@
-In here you can create or mount a data folder to begin to serve your files.
