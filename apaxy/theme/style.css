@@ -83,7 +83,7 @@ tr {
 	border:0;
 }
 tr:hover td {
-	background:#00dffc;
+	background: rgba(17, 91, 166, 0.6);
 }
 th {
 	text-align:left;
