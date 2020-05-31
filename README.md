@@ -18,7 +18,7 @@ To map the files from a filesystem you can mount folders or file to /var/www, en
     docker run -p 8080:8080 -v /data/myprojectfolder:/var/www/myprojectfolder secanis/camarero:latest
 
 If you want to set your own logo, you can map your own .png file to the directory /var/www/theme/icons/logo.png.
-You can customize everything by mounting the complete theme folder into the container.
+You can customize everything by mounting the complete theme folder into the container, that also includes the style.css file.
 
     docker run -p 8080:8080 -v /data/mylogo.png:/var/www/theme/icons/logo.png secanis/camarero:latest
 
