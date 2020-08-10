@@ -15,7 +15,9 @@ You can easily setup this tool with a docker container:
 
 To map the files from a filesystem you can mount folders or file to /var/www, ensure that you not overwrite the /var/www/theme folder.
 
-    docker run -p 8080:8080 -v /data/myprojectfolder:/var/www/myprojectfolder secanis/camarero:latest
+    docker run -p 8080:8080 -v /data/myprojectfolder:/var/www/dl secanis/camarero:latest
+
+> The internal mount folder has to be `/var/www/dl` because it will automatically set the rewrite rules correctly and will fetch the theme without any problems.
 
 If you want to set your own logo, you can map your own .png file to the directory /var/www/theme/icons/logo.png.
 You can customize everything by mounting the complete theme folder into the container, that also includes the style.css file.

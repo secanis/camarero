@@ -5,7 +5,7 @@
     /theme name: Apaxy V2
     /theme author: @fusengine
 \*------------------------------------*/
-@import url('//fonts.googleapis.com/css?family=Open+Sans');
+@import url('//fonts.googleapis.com/css?family=Raleway');
 * {
 	margin:0;
 	padding:0;
@@ -23,7 +23,7 @@ html {
 	color: #dae9f4;
 	font-weight:400;
 	font-size:1em;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Raleway', sans-serif;
 	line-height:2em;
 }
 body {
@@ -51,7 +51,7 @@ a, img {
 }
 
 a:hover {
-	color:rgb(206, 206, 206);
+	color:#2a2a2a;
 }
 /*------------------------------------*\
     Wrapper
@@ -132,6 +132,18 @@ tr.parent a[href^="/"] {
     Footer
 \*------------------------------------*/
 .footer {
+    margin-top: 20px;
+    padding-top: 8px;
+    border-top: 1px #fff solid;
 	text-align:center;
-	font-size:.75em;
+    font-size:.65em;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    max-width: 100%;
+  }
 }
