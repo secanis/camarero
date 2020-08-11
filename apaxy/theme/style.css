@@ -16,9 +16,9 @@
 
 html {
 	background: #1e2022;
-	min-height:100%;
-	border-top:10px solid rgba(17, 91, 166, 1);
-	border-bottom:10px solid rgba(17, 91, 166, 1);
+	height:100%;
+	border-top:5px solid rgba(17, 91, 166, 1);
+	border-bottom:5px solid rgba(17, 91, 166, 1);
 	/*color:#61666c;*/
 	color: #dae9f4;
 	font-weight:400;
@@ -28,6 +28,7 @@ html {
 }
 body {
 	padding:20px;
+	height:100%;
 	-webkit-backface-visibility:hidden;
 }
 code {
@@ -60,6 +61,8 @@ a:hover {
 	margin:0 auto;
 	padding-top:20px;
 	max-width:80%;
+	min-height: 100%;
+  	margin: 0 auto -60px;
 }
 /*------------------------------------*\
     Demo block
@@ -133,7 +136,7 @@ tr.parent a[href^="/"] {
 \*------------------------------------*/
 .footer {
     margin-top: 20px;
-    padding-top: 8px;
+	padding-top: 8px;
     border-top: 1px #fff solid;
 	text-align:center;
     font-size:.65em;
