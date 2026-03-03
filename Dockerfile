@@ -1,4 +1,4 @@
-FROM httpd:alpine
+FROM docker.io/httpd:alpine
 
 LABEL maintainer=support@secanis.ch \
     ch.secanis.tool=camarero
