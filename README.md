@@ -5,6 +5,13 @@ Download Server for your static binary files with an [Apache](https://hub.docker
 This tool was developed for a fast public file sharing without any role and user management.
 If you need user and role management, have a look to [Filebrowser](https://filebrowser.github.io) or something like [Nextcloud](https://nextcloud.com).
 
+## Image tags
+
+Images are published on [Docker Hub](https://hub.docker.com/r/secanis/camarero/tags):
+
+- [`latest`](https://hub.docker.com/r/secanis/camarero/tags?name=latest) - most recent build
+- [`2026.10`](https://hub.docker.com/r/secanis/camarero/tags?name=2026.10) - httpd 2.4 (alpine)
+
 ## How to use
 
 You can easily setup this tool with a docker container:
